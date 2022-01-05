@@ -13,16 +13,6 @@ const AutoComplete = () => {
   const [input, setInput] = useState("");
   const [words, setWords] = useState([]);
   const [showSuggestionBox, setShowSuggestionBox] = useState(false);
-  // const [textSuggestions, setTextSuggestions] = useState([]);
-  
-  useEffect(() => {
-    // setTextSuggestions(data); 
-    console.log(textSuggestions);
-
-    return () => {
-
-    }
-  });
 
 
   useEffect(() => {
@@ -78,7 +68,6 @@ const AutoComplete = () => {
   }
 
   const onChangeInput = (input) => {
-    console.log(textSuggestions);
     const newInput = input.target.value;
     setInput(newInput);
 
