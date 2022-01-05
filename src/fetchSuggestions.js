@@ -9,7 +9,6 @@ export const useFetchSuggestions = url => {
 		.then((response) => response.json())
 		.then(data => {
 			setState({ textSuggestions: data, loading: false});
-			console.log(data);
 		});
 	}, []);
 
